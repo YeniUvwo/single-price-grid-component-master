@@ -1,0 +1,167 @@
+body{
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  background-color: hsl(204, 43%, 93%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li{
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  padding: 50px 30px;
+  min-height: 100vh;
+}
+
+.top-sect{
+  background-color: #fff;
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+h1{
+  font-size: 1.25em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.top-sect header h1{
+  color: hsl(179, 62%, 43%);
+}
+
+.money-back{
+  color: hsl(71, 73%, 54%);
+  font-size: 0.97em;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding-right: 10px;
+}
+
+.gain-access{
+  color: hsl(218, 22%, 67%);
+  line-height: 1.8;
+  font-size: 0.85em;
+}
+
+.monthly-sub{
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+  padding: 25px;
+}
+
+.monthly-sub h1{
+  font-size: 1.1em;
+}
+
+.per-month{
+  font-size: 1em;
+  color: hsl(204, 43%, 95%);
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.sub-amount{
+  color: #fff;
+  font-size: 2em;
+  margin: 0 10px 10px 0;
+}
+
+.full-access{
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+
+.signup-btn{
+  width: 100%;
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  border: none;
+  border-radius: 5px;
+  padding: 14px 0;
+  font-weight: 700;
+}
+
+.why-us{
+  padding: 25px;
+  background-color: hsl(179, 62%, 53%);
+  color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.why-us li{
+  color: hsl(204, 43%, 93%);
+  font-size: 0.9em;
+  margin: 3px 0;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media(min-width: 560px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+  }
+
+  .top-sect{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    padding: 35px;
+  }
+
+  header h1,
+  .money-back{
+    display: inline-block;
+  }
+
+  .money-back{
+    margin-bottom: 8px;
+  }
+
+  .gain-access{
+    padding-right: 50px;
+  }
+
+  .bottom-sect{
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .monthly-sub,
+  .why-us{
+    padding: 35px;
+    width: 300px;
+  }
+
+  .monthly-sub{
+    border-bottom-left-radius: 5px;
+  }
+
+  .why-us{
+    border-bottom-left-radius: 0;
+  }
+}
